@@ -177,9 +177,10 @@ header .navbar ul li a{
 }
 
 .section-title:after {
-    content: "";
+    content: '';
     position: absolute;
-    top: 50px; left: 50%;
+    top: 50px; 
+    left: 50%;
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -196,7 +197,7 @@ header .navbar ul li a{
     margin-top: 20px;
 } 
     
-.content .col-left {
+.about .content .col-left {
     position: relative;
     width: 50%;
 }
@@ -235,7 +236,7 @@ header .navbar ul li a{
 
 /* Skills */ 
 .skills {
-    background: D#000016; 
+    background: #000016; 
 }
 
 .skills .content {
@@ -291,6 +292,7 @@ header .navbar ul li a{
     background: #999999; 
     border-radius: 2px;
 }
+
 .skills .content .col-right .bar .line::before {
     content: ""; 
     position: absolute;
@@ -324,3 +326,184 @@ header .navbar ul li a{
     flex-direction: row;
     margin-top: 20px;
 }
+
+.services .title p {
+    font-size: 1em;
+    width: 80%;
+}
+
+.services .content .card {
+    background: #fff;
+    width: 340px;
+    margin: 10px;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px; 
+    box-shadow: 0 5px 5px rgba(1 1 1 / 15%);
+}
+
+.services .content .card .service-icon {
+    color: #3a6cf4; 
+    font-size: 2em;
+    text-align: center; 
+    transition: transform 0.5s ease;
+}
+.services .content .card:hover .service-icon { 
+    transform: translateY(-10px); 
+}
+
+.services .content .card .info { 
+    text-align: center; 
+} 
+
+.services .content .card .info h3 { 
+    color: #3a6cf4; 
+    font-size: 1.2em; 
+    font-weight: 700; 
+    margin-bottom: 10px;
+}
+
+/* Project */ 
+.project { 
+    background: #000; 
+    }
+
+.project .content { 
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.project .content .card { 
+    width: 340px; 
+    margin: 15px; 
+}
+.project .content .card .card-img { 
+    position: relative; 
+    width: 100%; 
+    height: 260px; 
+    overflow: hidden; 
+}
+    
+.project .content .card .card-img img { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    transition: 0.5s ease; 
+} 
+
+.project .content .card .card-img img:hover {
+    transition: 0.9s ease-in-out;
+    transform: scale(1.2);
+ }
+
+ /* Contact */
+ .contact .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    margin-top: 20px;
+} 
+
+.contact .content .row { 
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    flex-direction: row;
+}
+
+.contact .content .row .card {
+    background: #fff; 
+    width: 290px;
+    margin: 20px;
+    padding: 25px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+    box-shadow: 0 5px 5px rgba(1 1 1 / 15%); 
+    border-radius: 10px; 
+} 
+
+.contact .content .row .card .contact-icon { 
+    color: #3a6cf4; 
+    font-size: 2em; 
+    text-align: center; 
+    transition: transform 0.5s ease;
+}
+
+.contact .content .row .card:hover .contact-icon { 
+    transform: translateY(-10px);
+} 
+ 
+.contact .content .row .card .info { 
+    text-align: center; 
+}
+ 
+.contact .content .row .card .info h3 {
+    color: #111; 
+    font-size: 1.2em;
+    font-weight: 700; 
+    margin: 10px;
+}
+
+.contact .content .row .card .info span { 
+    color: #666;
+    font-weight: 500;
+} 
+
+.contact-form { 
+    background: #fff; 
+    max-width: 600px; 
+    margin-top: 50px; 
+    padding: 50px; 
+    border-radius: 10px; 
+    box-shadow: 0 5px 5px  rgba(1 1 1 / 15%);
+}
+
+.contact-form h3 { 
+    color: #111; 
+    font-size: 1.6em; 
+    font-weight: 600; 
+    text-align: center; 
+    margin-bottom: 40px; 
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea {
+    color: #111;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 1em;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid #111;
+    border-radius: 5px;
+    resize: none;
+}
+  
+.contact-form .input-box .send-btn { 
+    color: #fff; 
+    background: #3a6cf4; 
+    display: inline-block; 
+    font-size: 1.1em; 
+    font-weight: 500; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    width: 100%; 
+    border: none; 
+    cursor: pointer; 
+    transition: 0.5s ease;
+}
+
+/* footer */

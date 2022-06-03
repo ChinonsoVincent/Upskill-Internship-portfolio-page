@@ -229,6 +229,7 @@ header .navbar ul li a{
     font-weight: 800; 
     margin-bottom: 20px;
 }
+
 .about .content .col-right .para-text {
     text-align: justify;
     font-size: 1em; 
@@ -279,7 +280,6 @@ header .navbar ul li a{
     margin-bottom: 5px;
 }
 
-
 .skills .content .col-right .bar .info span {
     font-size: 18px; 
     font-weight: 500;
@@ -302,19 +302,18 @@ header .navbar ul li a{
     border-radius: 2px;
 }
 
- 
 .skills .content .col-right .bar .html::before {
     width: 95%; 
     background: #e45126;
 }
 
 .skills .content .col-right .bar .css::before {
-    width: 85%; 
+    width: 80%; 
     background: #0c73b8;
 }
 
 .skills .content .col-right .bar .javascript::before {
-    width: 80%; 
+    width: 70%; 
     background: #e3a324;
 }
 
@@ -350,6 +349,7 @@ header .navbar ul li a{
     text-align: center; 
     transition: transform 0.5s ease;
 }
+
 .services .content .card:hover .service-icon { 
     transform: translateY(-10px); 
 }
@@ -382,6 +382,7 @@ header .navbar ul li a{
     width: 340px; 
     margin: 15px; 
 }
+
 .project .content .card .card-img { 
     position: relative; 
     width: 100%; 
@@ -507,3 +508,62 @@ header .navbar ul li a{
 }
 
 /* footer */
+footer {
+    background-color: #000;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+footer .footer-title {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+footer .footer-icons {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer .footer-icons a {
+    color: white;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+footer .footer-content p {
+    padding-top: 10px;
+}
+
+footer p a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .footer-end {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+footer .go-to-top {
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    display: flex;
+    justify-content:flex-end;
+    align-content: center;
+    position: relative;
+    bottom: 80px;
+}
+
+@media (min-width:800px) {
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer .footer-end {
+        margin-top: 30px;
+    }
+}
